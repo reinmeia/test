@@ -1,0 +1,296 @@
+/* MaterialApp */
+// import 'package:flutter/material.dart';
+
+// void main() {
+//   runApp(const MaterialApp(
+//     home: Text('Hello')
+//     )
+//   );
+// }
+
+/* Scaffold */
+import 'package:flutter/material.dart';
+
+void main() {
+  runApp(
+    MaterialApp(
+      home: Scaffold(
+        appBar: PreferredSize(
+          preferredSize: const Size.fromHeight(
+            100,
+          ), // Set your desired height here
+          child: AppBar(
+            title: Row(
+              mainAxisSize: MainAxisSize.min,
+              children: [
+                Image.asset(
+                  'assets/img/logo.png', // Replace with your image URL or use Image.asset for local images
+                  height: 80, // Make sure this is less than 100
+                ),
+                const SizedBox(width: 10),
+              ],
+            ),
+            backgroundColor: const Color.fromARGB(255, 219, 217, 191),
+            centerTitle: true,
+          ),
+        ),
+        body: const Center(
+          child: Text(
+            'Hi Allyna\nMargaret!',
+            style: TextStyle(fontSize: 40, color: Colors.blue),
+          ),
+        ),
+      ),
+    ),
+  );
+}
+
+/* Hot Reload */
+// import 'package:flutter/material.dart';
+
+// void main() {
+//   runApp(
+//     MaterialApp(
+//       home: Scaffold(
+//         appBar: AppBar(
+//           title: const Text(
+//             'Information Technology',
+//             style: TextStyle(
+//               fontSize: 24,
+//               fontWeight: FontWeight.bold,
+//               color: Colors.white,
+//             ),
+//           ),
+//           backgroundColor: Colors.blueAccent,
+//           centerTitle: true,
+//         ),
+//         body: const Home(),
+//       ),
+//     ),
+//   );
+// }
+
+// class Home extends StatelessWidget {
+//   const Home({super.key});
+
+//   @override
+//   Widget build(BuildContext context) {
+//     return const Center(
+//       child: Text(
+//         'SysDev!!!',
+//         style: TextStyle(fontSize: 40, color: Color.fromARGB(255, 39, 162, 176)),
+//       ),
+//     );
+//   }
+// }
+
+/* Container */
+// import 'package:flutter/material.dart';
+
+// void main() {
+//   runApp(
+//     MaterialApp(
+//       home: Scaffold(
+//         appBar: AppBar(
+//           title: const Text(
+//             'Information Technology',
+//             style: TextStyle(
+//               fontSize: 24,
+//               fontWeight: FontWeight.bold,
+//               color: Colors.white,
+//             ),
+//           ),
+//           backgroundColor: Colors.blueAccent,
+//           centerTitle: true,
+//         ),
+//         body: const Home(),
+//       ),
+//     ),
+//   );
+// }
+
+// class Home extends StatelessWidget {
+//   const Home({super.key});
+
+//   @override
+//   Widget build(BuildContext context) {
+//     return Container(
+//       color: Colors.blueGrey,
+//       padding: const EdgeInsets.all(20),
+//       margin: const EdgeInsets.fromLTRB(10, 40, 0, 0),
+//       child: const Text(
+//         'Hello World!!!',
+//         style: TextStyle(
+//           fontSize: 30,
+//           fontWeight: FontWeight.bold,
+//           color: Colors.white,
+//           decoration: TextDecoration.underline,
+//           fontStyle: FontStyle.italic,
+//           letterSpacing: 4,
+//         ),
+//       ),
+//     );
+//   }
+// }
+
+/* Columns - 1 */
+// import 'package:flutter/material.dart';
+
+// void main() {
+//   runApp(const MaterialApp(home: Sandbox()));
+// }
+
+// class Sandbox extends StatelessWidget {
+//   const Sandbox({super.key});
+
+//   @override
+//   Widget build(BuildContext context) {
+//     return Scaffold(
+//       appBar: AppBar(
+//         title: const Text('Sandbox'),
+//         backgroundColor: Colors.blueGrey,
+//       ),
+//       body: Column(
+//         crossAxisAlignment: CrossAxisAlignment.stretch,
+//         mainAxisAlignment: MainAxisAlignment.start,
+//         children: [
+//           Container(
+//             width: 100,
+//             color: Colors.black87,
+//             child: const Text(
+//               'Container 1',
+//               style: TextStyle(color: Colors.white, fontSize: 20),
+//             ),
+//           ),
+//           Container(
+//             width: 200,
+//             color: Colors.pink,
+//             child: const Text(
+//               'Container 2',
+//               style: TextStyle(color: Colors.white, fontSize: 30),
+//             ),
+//           ),
+//           Container(
+//             width: 300,
+//             color: Colors.green,
+//             child: const Text(
+//               'Container 3',
+//               style: TextStyle(color: Colors.white, fontSize: 40),
+//             ),
+//           ),
+//         ],
+//       ),
+//     );
+//   }
+// }
+
+/* Columns - 2 */
+// import 'package:flutter/material.dart';
+// import 'package:test/home.dart';
+
+// void main() {
+//   runApp(const MaterialApp(home: Home()));
+// }
+
+/* Rows - 1 */
+// import 'package:flutter/material.dart';
+// import 'package:test/home.dart';
+
+// void main() {
+//   runApp(const MaterialApp(home: Sandbox()));
+// }
+
+// class Sandbox extends StatelessWidget {
+//   const Sandbox({super.key});
+
+//   @override
+//   Widget build(BuildContext context) {
+//     return Scaffold(
+//       appBar: AppBar(
+//         title: const Text('Sandbox'),
+//         backgroundColor: Colors.blueGrey,
+//       ),
+//       body: Row(
+//         mainAxisAlignment: MainAxisAlignment.center,
+//         crossAxisAlignment: CrossAxisAlignment.stretch,
+//         children: [
+//           Container(
+//             height: 100,
+//             color: Colors.black87,
+//             child: const Text(
+//               'Container 1',
+//               style: TextStyle(color: Colors.white),
+//             ),
+//           ),
+//           Container(
+//             height: 200,
+//             color: Colors.pink,
+//             child: const Text(
+//               'Container 2',
+//               style: TextStyle(color: Colors.white),
+//             ),
+//           ),
+//           Container(
+//             height: 300,
+//             color: Colors.green,
+//             child: const Text(
+//               'Container 3',
+//               style: TextStyle(color: Colors.white),
+//             ),
+//           ),
+//         ],
+//       )
+//     );
+//   }
+// }
+
+/* Rows - 2 */
+// // import 'package:flutter/material.dart';
+// // import 'package:test/home.dart';
+
+// // void main() {
+// //   runApp(const MaterialApp(home: Home()));
+// // }
+
+/* Images - 1*/
+// import 'package:flutter/material.dart';
+// import 'package:test/home.dart';
+
+// void main() {
+//   runApp(const MaterialApp(home: Home()));
+// }
+
+/* Images - 2 */
+// import 'package:flutter/material.dart';
+
+// void main() {
+//   runApp(const MaterialApp(home: Sample()));
+// }
+
+// class Sample extends StatelessWidget {
+//   const Sample({super.key});
+
+//   @override
+//   Widget build(BuildContext context) {
+//     return Scaffold(
+//       appBar: AppBar(
+//         title: const Text("Image Network Example"),
+//         backgroundColor: Colors.blueAccent,
+//         centerTitle: true,
+//       ),
+//       body: Center(
+//         child: Image.network(
+//           'https://ih1.redbubble.net/image.1187851051.8476/flat,750x,075,f-pad,750x1000,f8f8f8.jpg',
+//         ),
+//       ),
+//     );
+//   }
+// }
+
+/* Expanded Widgets */
+// import 'package:flutter/material.dart';
+// import 'package:test/home.dart';
+
+// void main() {
+//   runApp(const MaterialApp(home: Home()));
+// }
