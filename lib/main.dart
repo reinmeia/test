@@ -24,8 +24,8 @@ void main() {
               mainAxisSize: MainAxisSize.min,
               children: [
                 Image.asset(
-                  'assets/img/logo.png', // Replace with your image URL or use Image.asset for local images
-                  height: 80, // Make sure this is less than 100
+                  'assets/img/1.png', // Replace with your image URL or use Image.asset for local images
+                  height: 100, // Make sure this is less than 100
                 ),
                 const SizedBox(width: 10),
               ],
